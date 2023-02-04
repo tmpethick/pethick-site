@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{xifthen}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{fancyvrb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{tikz-qtree}\usetikzlibrary{positioning}
+\newcommand{\arrayblock}[2][]{%
+  \rowcolors{1}{#2}{#2}
+  \renewcommand{\arraystretch}{0.9}
+  \begin{tabular}{|p{0.5mm}|p{0.5mm}|p{0.5mm}|p{0.5mm}|p{0.5mm}|p{0.5mm}|p{0.5mm}|p{0.5mm}|}
+    \hline
+    \ifthenelse{\equal{#1}{}}{&  &  &  &  &}{#1}\\
+    \hline
+  \end{tabular}%
+  \renewcommand{\arraystretch}{1}
+}
+\begin{document}
+$\begin{array}{lll}
+  \text{$M/B$ arrays} & \left\{
+    \begin{array}{lll}
+      \overbrace{\arrayblock[&  &  &  & $\bullet$ &]{blue!25}}^{\mathclap{\text{B cells}}}
+        \ \arrayblock[& & & & &]{white}
+        \ \arrayblock[& & & & &]{white}
+        \\[\medskipamount]
+      \arrayblock[& & & & &]{lightgray!25}
+        \ {\arrayblock[&  & & $\bullet$  & &]{blue!25}}
+        \ \arrayblock[& & & & &]{white}
+        \ \arrayblock[& & & & &]{white} 
+        \\[\medskipamount]
+      \vdotswithin{\ldots}\\[\medskipamount]
+      \arrayblock[& & & & &]{lightgray!25}
+        \ {\arrayblock[$\bullet$ & & & & &]{blue!25}}
+    \end{array}
+    \right.\\
+    & \\
+  \text{Output array} & \quad \
+    \arrayblock[& & & & &]{lightgray!25}\
+    \arrayblock[& & & & &]{lightgray!25}\
+    \arrayblock[& & & & &]{lightgray!25}\
+    {\arrayblock[& $\bullet$]{blue!25}}
+\end{array}$
+\end{document}

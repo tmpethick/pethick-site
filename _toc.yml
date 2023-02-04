@@ -1,0 +1,48 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index.md
+# parts:
+#   - caption: Overview
+#     chapters:
+#       - file: about.md
+#       - file: posts.md
+#       - file: publications.md
+#   - caption: Online learning
+#     chapters:
+#       - file: posts/2019-11-02-FTRL
+#       - file: posts/2020-01-06-hedge-and-bandit
+#       - file: posts/2020-01-07-gp-mw
+#   - caption: Talks
+#     chapters:
+#       - file: posts/2019-11-03-russell-talk
+#       - file: posts/2019-11-16-caroline-uhler
+
+#   - caption: Posts # Needs to be present for sphinx_proof to work (thm etc.)
+#     chapters:
+#       - file: posts/2020-06-04-acceleration-with-potential-function
+#       - file: posts/2020-06-04-acceleration-perspectives
+#       - file: posts/2020-05-15-gradientboosting
+#       - file: posts/2020-05-26-bayesian-logistic-regression
+#       - file: posts/2018-05-22-io-model
+
+chapters:
+  - file: about.md
+  - file: publications.md
+  - file: online-learning.md
+    sections:
+      - file: posts/2019-11-02-FTRL
+      - file: posts/2020-01-06-hedge-and-bandit
+      - file: posts/2020-01-07-gp-mw
+  - file: talks.md
+    sections:
+      - file: posts/2019-11-03-russell-talk
+      - file: posts/2019-11-16-caroline-uhler
+  - file: posts.md
+    sections: # Needs to be present for sphinx_proof to work (thm etc.)
+      - file: posts/2020-06-04-acceleration-with-potential-function
+      - file: posts/2020-06-04-acceleration-perspectives
+      - file: posts/2020-05-15-gradientboosting
+      - file: posts/2020-05-26-bayesian-logistic-regression
+      - file: posts/2018-05-22-io-model
