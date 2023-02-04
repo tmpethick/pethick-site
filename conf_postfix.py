@@ -8,6 +8,7 @@ blog_path = "posts"
 blog_title = "Thomas Pethick's blog"
 blog_baseurl = "https://pethick.dk/"
 blog_feed_archives = True
+github_pages = "tmpethick"
 
 # Populate publication context for jinja template
 import yaml

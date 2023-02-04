@@ -4,6 +4,13 @@
 title: Thomas Pethick
 author: Thomas Pethick
 logo: ''
+exclude_patterns: 
+  - _build
+  - Thumbs.db
+  - .DS_Store
+  - "**.ipynb_checkpoints"
+  - README.md
+  - _tikz/README.md
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -66,4 +73,5 @@ parse:
   myst_enable_extensions:
     - amsmath
     - dollarmath
+    - substitution
 

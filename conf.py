@@ -8,7 +8,7 @@ bibtex_bibfiles = ['_references/references.bib', '_references/2018-05-22-io-mode
 bibtex_reference_style = 'author_year'
 comments_config = {'hypothesis': False, 'utterances': False}
 copyright = '2022'
-exclude_patterns = ['**.ipynb_checkpoints', '.DS_Store', 'Thumbs.db', '_build']
+exclude_patterns = ['**.ipynb_checkpoints', '.DS_Store', 'README.md', 'Thumbs.db', '_build', '_tikz/README.md']
 execution_allow_errors = False
 execution_excludepatterns = []
 execution_in_temp = False
@@ -31,7 +31,7 @@ jupyter_cache = ''
 jupyter_execute_notebooks = 'force'
 language = 'en'
 latex_engine = 'pdflatex'
-myst_enable_extensions = ['amsmath', 'dollarmath']
+myst_enable_extensions = ['amsmath', 'dollarmath', 'substitution']
 myst_url_schemes = ['mailto', 'http', 'https']
 nb_output_stderr = 'show'
 numfig = True
@@ -49,6 +49,7 @@ blog_path = "posts"
 blog_title = "Thomas Pethick's blog"
 blog_baseurl = "https://pethick.dk/"
 blog_feed_archives = True
+github_pages = "tmpethick"
 
 # Populate publication context for jinja template
 import yaml
