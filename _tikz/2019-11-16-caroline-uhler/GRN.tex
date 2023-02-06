@@ -1,4 +1,4 @@
-\documentclass{standalone}
+\documentclass[varwidth]{standalone}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{tikz}
@@ -20,4 +20,11 @@
 \path[->] (v4) edge node[label] {} (v2);
 \path[->] (v3) edge node[label] {} (v4);
 \end{tikzpicture}}
+
+$\begin{aligned}
+X_1 &=f(\epsilon_1)\\
+X_2 &= f(X_1, \epsilon_2) \\
+X_3 &= f(X_1, \epsilon_3) \\
+X_4 &= f(X_2, X_3, \epsilon_4)
+\end{aligned}$
 \end{document}
