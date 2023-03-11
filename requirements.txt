@@ -1,4 +1,4 @@
-jupyter-book==0.13.1
+jupyter-book==0.15
 matplotlib
 numpy
 sphinx-proof==0.1.3

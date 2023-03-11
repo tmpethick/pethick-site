@@ -9,10 +9,6 @@ bibtex_reference_style = 'author_year'
 comments_config = {'hypothesis': False, 'utterances': False}
 copyright = '2022'
 exclude_patterns = ['**.ipynb_checkpoints', '.DS_Store', 'README.md', 'Thumbs.db', '_build', '_tikz/README.md']
-execution_allow_errors = False
-execution_excludepatterns = []
-execution_in_temp = False
-execution_timeout = 30
 extensions = ['sphinx_togglebutton', 'sphinx_copybutton', 'myst_nb', 'jupyter_book', 'sphinx_thebe', 'sphinx_comments', 'sphinx_external_toc', 'sphinx.ext.intersphinx', 'sphinx_design', 'sphinx_book_theme', 'sphinx_proof', 'sphinx_jinja', 'sphinxcontrib.bibtex', 'sphinx_jupyterbook_latex']
 external_toc_exclude_missing = False
 external_toc_path = '_toc.yml'
@@ -20,19 +16,24 @@ html_baseurl = ''
 html_css_files = ['custom.css', 'font/cm/Serif/cmun-serif.css', 'font/cm/Sans/cmun-sans.css']
 html_extra_path = ['assets']
 html_favicon = ''
+html_js_files = ['custom.js']
 html_logo = ''
-html_sidebars = {'**': ['sidebar-logo.html', 'search-field.html', 'sbt-sidebar-nav.html']}
+html_sidebars = {'**': ['navbar-logo.html', 'search-field.html', 'sbt-sidebar-nav.html']}
 html_sourcelink_suffix = ''
 html_static_path = ['_static']
 html_theme = 'sphinx_book_theme'
 html_theme_options = {'search_bar_text': 'Search...', 'use_download_button': False, 'use_fullscreen_button': False, 'use_sidenotes': True}
 html_title = 'Thomas Pethick'
-jupyter_cache = ''
-jupyter_execute_notebooks = 'force'
 language = 'en'
 latex_engine = 'pdflatex'
 myst_enable_extensions = ['amsmath', 'dollarmath', 'substitution']
 myst_url_schemes = ['mailto', 'http', 'https']
+nb_execution_allow_errors = False
+nb_execution_cache_path = ''
+nb_execution_excludepatterns = []
+nb_execution_in_temp = False
+nb_execution_mode = 'force'
+nb_execution_timeout = 30
 nb_output_stderr = 'show'
 numfig = True
 pygments_style = 'sphinx'
@@ -40,6 +41,7 @@ suppress_warnings = ['myst.domains']
 use_jupyterbook_latex = True
 use_multitoc_numbering = True
 
+import datetime
 
 # ablog configuration
 import ablog
@@ -50,6 +52,7 @@ blog_title = "Thomas Pethick's blog"
 blog_baseurl = "https://pethick.dk/"
 blog_feed_archives = True
 github_pages = "tmpethick"
+post_show_prev_next = False
 
 # Populate publication context for jinja template
 import yaml
@@ -58,6 +61,16 @@ with open("publications.yml", "r") as stream:
 jinja_contexts = {
   'publications_ctx': {'publications': publications}
 }
+
+# Provide Jinja filter
+def format_date(date_string):
+    date = datetime.datetime.strptime(date_string, '%Y-%m-%d')
+    return date.strftime("%b %d, %Y")
+
+jinja_filters = {
+    'format_date': format_date,
+}
+
 
 # Makes footnotes Tufte-style sidenotes
 # (see https://sphinx-book-theme.readthedocs.io/en/stable/content-blocks.html?highlight=sidenote#activate-sidenotes-and-marginnotes)
