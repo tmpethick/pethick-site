@@ -32,6 +32,7 @@ bibtex_bibfiles:
   - _references/2020-01-07-gp-mw.bib
   - _references/2020-05-26-bayesian-logistic-regression.bib
   - _references/2020-06-04-acceleration-perspectives.bib
+  - _references/2024-06-10-polyak-stepsize.bib
 
 # Information about where the book exists on the web
 repository:

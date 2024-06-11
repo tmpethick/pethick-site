@@ -4,7 +4,7 @@
 # re-generate this one.
 ###############################################################################
 author = 'Thomas Pethick'
-bibtex_bibfiles = ['_references/references.bib', '_references/2018-05-22-io-model.bib', '_references/2019-11-02-FTRL.bib', '_references/2019-11-03-russell-talk.bib', '_references/2020-01-06-hedge-and-bandit.bib', '_references/2020-01-07-gp-mw.bib', '_references/2020-05-26-bayesian-logistic-regression.bib', '_references/2020-06-04-acceleration-perspectives.bib']
+bibtex_bibfiles = ['_references/references.bib', '_references/2018-05-22-io-model.bib', '_references/2019-11-02-FTRL.bib', '_references/2019-11-03-russell-talk.bib', '_references/2020-01-06-hedge-and-bandit.bib', '_references/2020-01-07-gp-mw.bib', '_references/2020-05-26-bayesian-logistic-regression.bib', '_references/2020-06-04-acceleration-perspectives.bib', '_references/2024-06-10-polyak-stepsize.bib']
 bibtex_reference_style = 'author_year'
 comments_config = {'hypothesis': False, 'utterances': False}
 copyright = '2022'

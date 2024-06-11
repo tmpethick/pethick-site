@@ -41,6 +41,7 @@ chapters:
       - file: posts/2019-11-16-caroline-uhler
   - file: posts.md
     sections: # Needs to be present for sphinx_proof to work (thm etc.)
+      - file: posts/2024-06-10-polyak-stepsize
       - file: posts/2020-06-04-acceleration-with-potential-function
       - file: posts/2020-06-04-acceleration-perspectives
       - file: posts/2020-05-15-gradientboosting
