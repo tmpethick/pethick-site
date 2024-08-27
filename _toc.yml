@@ -28,7 +28,7 @@ root: index.md
 #       - file: posts/2018-05-22-io-model
 
 chapters:
-  - file: about.md
+#  - file: content.md
   - file: publications.md
   - file: online-learning.md
     sections:
