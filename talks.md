@@ -1,4 +1,0 @@
-# Talks
-
-```{tableofcontents}
-```
