@@ -2,7 +2,7 @@
   authors: <b>Thomas Pethick</b>, Wanyun Xie, Kimon Antonakopoulos, Zhenyu Zhu, Antonio Silveti-Falls and Volkan Cevher
   conference: International Conference on Machine Learning (ICML) 2025  <span style="color:red;">(spotlight)</span>
   paper: https://arxiv.org/pdf/2502.07529
-  code: https://github.com/LIONS-EPFL/scion.
+  code: https://github.com/LIONS-EPFL/scion
   selected: true
 - title: "Efficient Interpolation between Extragradient and Proximal Methods for Weak MVIs"
   authors: <b>Thomas Pethick</b>, Ioannis Mavrothalassitis and Volkan Cevher
