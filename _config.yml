@@ -33,6 +33,7 @@ bibtex_bibfiles:
   - _references/2020-05-26-bayesian-logistic-regression.bib
   - _references/2020-06-04-acceleration-perspectives.bib
   - _references/2024-06-10-polyak-stepsize.bib
+  - _references/2025-07-06-one-change-at-a-time.bib
 
 # Information about where the book exists on the web
 repository:
