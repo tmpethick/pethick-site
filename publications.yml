@@ -3,11 +3,13 @@
   conference: International Conference on Machine Learning (ICML) 2025  <span style="color:red;">(spotlight)</span>
   paper: https://arxiv.org/pdf/2502.07529
   code: https://github.com/LIONS-EPFL/scion
+  tweet: https://x.com/tmpethick/status/1945176711580058005
   selected: true
 - title: "Efficient Interpolation between Extragradient and Proximal Methods for Weak MVIs"
   authors: <b>Thomas Pethick</b>, Ioannis Mavrothalassitis and Volkan Cevher
   conference: International Conference on Learning Representations (ICLR) 2025
   paper: https://openreview.net/pdf?id=Y7slJZPGCy
+  tweet: https://x.com/tmpethick/status/1915641553466642866
   selected: true
 - title: "$\\nu$SAM: Memory-Efficient Sharpness-Aware Minimization via Nuclear Norm Constraints"
   authors: <b>Thomas Pethick</b>, Parameswaran Raman, Lenon Minorics, Mingyi Hong, Shoham Sabach and Volkan Cevher
@@ -19,6 +21,7 @@
   conference: Neural Information Processing Systems (NeurIPS) 2024
   paper: https://arxiv.org/pdf/2410.10683
   code: https://github.com/LIONS-EPFL/SAMPa
+  tweet: https://x.com/tmpethick/status/1866861388481826875
   selected: true
 - title: "iFedDR: Auto-Tuning Local Computation with Inexact Douglas-Rachford Splitting in Federated Learning"
   authors: <b>Thomas Pethick</b>, Puya Latafat, Basile Lewandowski, Zheng Xu, Peter Kairouz, Panagiotis Patrinos, Volkan Cevher
@@ -39,12 +42,14 @@
   conference: Neural Information Processing Systems (NeurIPS) 2023 <span style="color:red;">(spotlight)</span>
   paper: https://arxiv.org/pdf/2310.13459.pdf
   code: https://github.com/LIONS-EPFL/linear-interpolation
+  tweet: https://x.com/tmpethick/status/1734337598137479259
   selected: true
 - title: "Solving stochastic weak Minty variational inequalities without increasing batch size"
   authors: <b>Thomas Pethick</b>, Olivier Fercoq, Puya Latafat, Panagiotis Patrinos and Volkan Cevher
   conference: International Conference on Learning Representations (ICLR) 2023
   paper: https://openreview.net/pdf?id=ejR4E1jaH9k
   code: https://github.com/LIONS-EPFL/stochastic-weak-minty-code
+  tweet: https://x.com/tmpethick/status/1653374214127116289
   selected: true
 - title: "Federated Learning under Covariate Shifts with Generalization Guarantees"
   authors: Ali Ramezani-Kebrya, Fanghui Liu, <b>Thomas Pethick</b>, Grigorios Chrysos, Volkan Cevher
@@ -66,6 +71,7 @@
   conference: The International Conference on Learning Representations (ICLR) 2022 <span style="color:red;">(spotlight)</span>
   paper: https://infoscience.epfl.ch/record/291889/files/escaping_limit_cycles_global_c.pdf
   code: https://github.com/LIONS-EPFL/weak-minty-code/
+  tweet: https://x.com/tmpethick/status/1518547018754543616
   selected: true
 - title: "Sifting through the noise: Universal first-order methods for stochastic variational inequalities"
   authors:  Kimon Antonakopoulos, <b>Thomas Pethick</b>, Ali Kavis, Panayotis Mertikopoulos, Volkan Cevher
