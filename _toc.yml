@@ -37,6 +37,7 @@ chapters:
       - file: posts/2020-01-07-gp-mw
   - file: posts.md
     sections: # Needs to be present for sphinx_proof to work (thm etc.)
+      - file: posts/2025-08-18-understanding-dion
       - file: posts/2025-07-06-one-change-at-a-time
       - file: posts/2024-06-10-polyak-stepsize
       - file: posts/2020-06-04-acceleration-with-potential-function
