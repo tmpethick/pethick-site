@@ -1,3 +1,10 @@
+- title: "Generalized Gradient Norm Clipping & Non-Euclidean $(L_0,L_1)$-Smoothness"
+  authors: <b>Thomas Pethick</b>, Wanyun Xie, Mete Erdogan, Kimon Antonakopoulos, Antonio Silveti-Falls and Volkan Cevher
+  conference: Neural Information Processing Systems (NeurIPS) 2025  <span style="color:red;">(oral)</span>
+  paper: https://arxiv.org/pdf/2506.01913
+  code: https://github.com/LIONS-EPFL/ClippedScion
+  tweet: https://x.com/tmpethick/status/1996944484479930709
+  selected: false
 - title: "Training Deep Learning Models with Norm-Constrained LMOs"
   authors: <b>Thomas Pethick</b>, Wanyun Xie, Kimon Antonakopoulos, Zhenyu Zhu, Antonio Silveti-Falls and Volkan Cevher
   conference: International Conference on Machine Learning (ICML) 2025  <span style="color:red;">(spotlight)</span>
