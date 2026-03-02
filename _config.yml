@@ -76,4 +76,4 @@ parse:
     - amsmath
     - dollarmath
     - substitution
-
+    - colon_fence

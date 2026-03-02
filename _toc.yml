@@ -30,6 +30,7 @@ root: index.md
 chapters:
 #  - file: content.md
   - file: publications.md
+  - file: talks.md
   - file: online-learning.md
     sections:
       - file: posts/2019-11-02-FTRL
