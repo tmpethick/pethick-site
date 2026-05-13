@@ -34,6 +34,7 @@ bibtex_bibfiles:
   - _references/2020-06-04-acceleration-perspectives.bib
   - _references/2024-06-10-polyak-stepsize.bib
   - _references/2025-07-06-one-change-at-a-time.bib
+  - _references/2026-05-13-weight-decay-last-layer.bib
 
 # Information about where the book exists on the web
 repository:

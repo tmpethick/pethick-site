@@ -4,7 +4,7 @@
 # re-generate this one.
 ###############################################################################
 author = 'Thomas Pethick'
-bibtex_bibfiles = ['_references/references.bib', '_references/2018-05-22-io-model.bib', '_references/2019-11-02-FTRL.bib', '_references/2019-11-03-russell-talk.bib', '_references/2020-01-06-hedge-and-bandit.bib', '_references/2020-01-07-gp-mw.bib', '_references/2020-05-26-bayesian-logistic-regression.bib', '_references/2020-06-04-acceleration-perspectives.bib', '_references/2024-06-10-polyak-stepsize.bib', '_references/2025-07-06-one-change-at-a-time.bib']
+bibtex_bibfiles = ['_references/references.bib', '_references/2018-05-22-io-model.bib', '_references/2019-11-02-FTRL.bib', '_references/2019-11-03-russell-talk.bib', '_references/2020-01-06-hedge-and-bandit.bib', '_references/2020-01-07-gp-mw.bib', '_references/2020-05-26-bayesian-logistic-regression.bib', '_references/2020-06-04-acceleration-perspectives.bib', '_references/2024-06-10-polyak-stepsize.bib', '_references/2025-07-06-one-change-at-a-time.bib', '_references/2026-05-13-weight-decay-last-layer.bib']
 bibtex_reference_style = 'author_year'
 comments_config = {'hypothesis': False, 'utterances': False}
 copyright = '2022'
@@ -42,6 +42,7 @@ use_jupyterbook_latex = True
 use_multitoc_numbering = True
 
 import datetime
+import re
 
 # ablog configuration
 import ablog
@@ -75,3 +76,63 @@ jinja_filters = {
 # Makes footnotes Tufte-style sidenotes
 # (see https://sphinx-book-theme.readthedocs.io/en/stable/content-blocks.html?highlight=sidenote#activate-sidenotes-and-marginnotes)
 html_theme_options['use_sidenotes'] = True
+
+
+def _bibtex_escape(value):
+    replacements = {
+        "\\": r"\textbackslash{}",
+        "{": r"\{",
+        "}": r"\}",
+        "&": r"\&",
+        "%": r"\%",
+        "$": r"\$",
+        "#": r"\#",
+        "_": r"\_",
+    }
+    return "".join(replacements.get(char, char) for char in value)
+
+
+def _citation_key(year, slug):
+    slug = re.sub(r"^\d{4}-\d{2}-\d{2}-?", "", slug)
+    key_slug = re.sub(r"[^A-Za-z0-9]+", "", slug).lower()
+    return f"pethick{year}{key_slug}"
+
+
+def _append_post_citation(app, docname, source):
+    if not docname.startswith("posts/") or "/" in docname[len("posts/"):]:
+        return
+
+    text = source[0]
+    post_match = re.search(r"^```\{post\}\s+(\d{4}-\d{2}-\d{2})", text, re.MULTILINE)
+    title_match = re.search(r"^#\s+(.+?)\s*$", text, re.MULTILINE)
+    if not post_match or not title_match:
+        return
+
+    date = post_match.group(1)
+    year, month, day = date.split("-")
+    title = re.sub(r"\s+", " ", title_match.group(1)).strip()
+    slug = docname.rsplit("/", 1)[-1]
+    baseurl = app.config.blog_baseurl.rstrip("/")
+    url = f"{baseurl}/posts/{slug}/"
+    bibtex = f"""@misc{{{_citation_key(year, slug)},
+  author = {{Thomas Pethick}},
+  title = {{{_bibtex_escape(title)}}},
+  year = {{{year}}},
+  month = {{{month}}},
+  day = {{{day}}},
+  url = {{{url}}},
+  note = {{Blog post}}
+}}"""
+
+    source[0] = text.rstrip() + f"""
+
+## Cite this post
+
+```bibtex
+{bibtex}
+```
+"""
+
+
+def setup(app):
+    app.connect("source-read", _append_post_citation)
