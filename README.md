@@ -18,6 +18,12 @@ The following commands are available:
 - `make rebuild`/`make autorebuild`: Like (auto)build but will remove all `_build` to prevent caching
 - `make deploy`: Deploys to Github Pages using ablog scripts.
 
+Example:
+
+```bash
+conda run -n site make autobuild
+```
+
 > **Note**: In order to use the `sphinx-proof` extension (i.e. theorem blocks etc.), the post needs to be added to `_toc.yml`.
 
 ## Documentation
