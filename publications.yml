@@ -1,3 +1,29 @@
+- title: "When to use what Schatten-$p$ norm in deep learning?"
+  authors: <b>Thomas Pethick</b>
+  conference: NeurIPS Workshop on Optimization for Machine Learning (OPT) 2026
+  paper: https://arxiv.org/pdf/2606.15268
+  selected: true
+- title: "Free Heavy-Tailed Lunch for Muon: A Theoretical Justification of Empirical Success"
+  authors: Florian Hübler, <b>Thomas Pethick</b> and Suvrit Sra
+  conference: Neural Information Processing Systems (NeurIPS) 2026  <span style="color:red;">(spotlight)</span>
+  paper: https://arxiv.org/abs/2606.14560
+  selected: false
+- title: "Optimistic Dual Averaging Unifies Modern Optimizers"
+  authors: <b>Thomas Pethick</b>, Wanyun Xie, Roman Machacek and Volkan Cevher
+  conference: Neural Information Processing Systems (NeurIPS) 2026
+  paper: https://arxiv.org/pdf/2605.11172
+  code: https://github.com/tmpethick/soda_code
+  selected: false
+- title: "Training Neural Networks at Any Scale: An Exposition"
+  authors: <b>Thomas Pethick</b>, Kimon Antonakopoulos, Antonio Silveti-Falls, Leena Chennuru Vankadara and Volkan Cevher
+  conference: IEEE Signal Processing Magazine 2026
+  paper: https://arxiv.org/pdf/2511.11163
+  selected: false
+- title: "Stable Optimization in Deep Learning: Geometry and Games"
+  authors: <b>Thomas Pethick</b>
+  conference: PhD thesis, EPFL 2026  <span style="color:red;">(EPFL Thesis Award)</span>
+  paper: https://infoscience.epfl.ch/entities/publication/36048ab5-df8d-419a-8067-4cf716f7a7cd
+  selected: false
 - title: "Generalized Gradient Norm Clipping & Non-Euclidean $(L_0,L_1)$-Smoothness"
   authors: <b>Thomas Pethick</b>, Wanyun Xie, Mete Erdogan, Kimon Antonakopoulos, Antonio Silveti-Falls and Volkan Cevher
   conference: Neural Information Processing Systems (NeurIPS) 2025  <span style="color:red;">(oral)</span>
@@ -50,14 +76,14 @@
   paper: https://arxiv.org/pdf/2310.13459.pdf
   code: https://github.com/LIONS-EPFL/linear-interpolation
   tweet: https://x.com/tmpethick/status/1734337598137479259
-  selected: true
+  selected: false
 - title: "Solving stochastic weak Minty variational inequalities without increasing batch size"
   authors: <b>Thomas Pethick</b>, Olivier Fercoq, Puya Latafat, Panagiotis Patrinos and Volkan Cevher
   conference: International Conference on Learning Representations (ICLR) 2023
   paper: https://openreview.net/pdf?id=ejR4E1jaH9k
   code: https://github.com/LIONS-EPFL/stochastic-weak-minty-code
   tweet: https://x.com/tmpethick/status/1653374214127116289
-  selected: true
+  selected: false
 - title: "Federated Learning under Covariate Shifts with Generalization Guarantees"
   authors: Ali Ramezani-Kebrya, Fanghui Liu, <b>Thomas Pethick</b>, Grigorios Chrysos, Volkan Cevher
   conference: Transactions on Machine Learning Research (TMLR) 2023

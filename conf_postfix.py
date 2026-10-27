@@ -13,6 +13,12 @@ blog_feed_archives = True
 github_pages = "tmpethick"
 post_show_prev_next = False
 
+# Custom sidebar templates (e.g. sidebar-links.html). sphinx_book_theme registers
+# its components dir before conf.py is read, so it must be re-added here.
+import os
+import sphinx_book_theme
+templates_path = ["_templates", os.path.join(sphinx_book_theme.get_html_theme_path(), "components")]
+
 # Populate publication context for jinja template
 import yaml
 with open("publications.yml", "r") as stream:

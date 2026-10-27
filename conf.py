@@ -18,7 +18,7 @@ html_extra_path = ['assets']
 html_favicon = ''
 html_js_files = ['custom.js']
 html_logo = ''
-html_sidebars = {'**': ['navbar-logo.html', 'search-field.html', 'sbt-sidebar-nav.html']}
+html_sidebars = {'**': ['navbar-logo.html', 'sidebar-links.html', 'search-field.html', 'sbt-sidebar-nav.html']}
 html_sourcelink_suffix = ''
 html_static_path = ['_static']
 html_theme = 'sphinx_book_theme'
@@ -54,6 +54,12 @@ blog_baseurl = "https://pethick.dk/"
 blog_feed_archives = True
 github_pages = "tmpethick"
 post_show_prev_next = False
+
+# Custom sidebar templates (e.g. sidebar-links.html). sphinx_book_theme registers
+# its components dir before conf.py is read, so it must be re-added here.
+import os
+import sphinx_book_theme
+templates_path = ["_templates", os.path.join(sphinx_book_theme.get_html_theme_path(), "components")]
 
 # Populate publication context for jinja template
 import yaml
